@@ -9,29 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var index_1 = require('../_services/index');
+// import { User } from '../_models/index';
+// import { UserService } from '../_services/index';
 var HomeComponent = (function () {
-    function HomeComponent(userService) {
-        this.userService = userService;
-        this.users = [];
+    function HomeComponent() {
     }
-    HomeComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        // get users from secure api end point
-        this.userService.getUsers()
-            .subscribe(function (users) {
-            _this.users = users;
-        });
-    };
     HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            templateUrl: 'home.component.html'
+            templateUrl: 'homepage.component.html'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof index_1.UserService !== 'undefined' && index_1.UserService) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [])
     ], HomeComponent);
     return HomeComponent;
-    var _a;
 }());
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=homepage.component.js.map
