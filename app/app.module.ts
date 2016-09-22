@@ -21,7 +21,7 @@ import { HomeComponent } from './homepage/homepage.component';
     LoginComponent,
     HomeComponent
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }
